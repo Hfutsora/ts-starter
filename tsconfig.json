@@ -2,8 +2,13 @@
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "module": "commonjs",
+    "module": "ESNext",
     "moduleResolution": "Node",
+    "declaration": true,
+    "declarationDir": "./types",
+    "rootDir": ".",
+    "allowJs": false,
+    "outDir": "dist",
     "strict": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -15,5 +20,5 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts"]
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "test/sum.spec.ts"]
 }
